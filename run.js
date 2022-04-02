@@ -17,15 +17,15 @@ client.commands = new Collection();
 
 client.on("ready", () => {
     console.log(`${client.user.username} ready!`);
-    client.user.setActivity(`${PREFIX}help or ${PREFIX}도움말`, { type: "WATCHING" });
+    client.user.setActivity(`${PREFIX}help or ${PREFIX}도움말`, {type: "WATCHING"}).then(r => console.log());
 });
 
 client.on("warn", (info) => console.log(info));
 client.on("error", console.error);
 
-const commands = readdirSync(join(__dirname, "commands")).filter((file) => file.endsWith(".js"));
+const commands = readdirSync(join(__dirname, "Commands")).filter((file) => file.endsWith(".js"));
 for (const file of commands) {
-    const command = require(join(__dirname, "commands", `${file}`));
+    const command = require(join(__dirname, "Commands", `${file}`));
     client.commands.set(command.name, command);
 }
 

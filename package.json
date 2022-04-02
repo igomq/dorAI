@@ -1,7 +1,7 @@
 {
-  "name": "djs-template",
-  "version": "0.0.1",
-  "description": "A Disocrd Chatbot (Discord.JS) Template",
+  "name": "dorai-bot",
+  "version": "0.1.0",
+  "description": "Discord.js ChatBot",
   "main": "run.js",
   "dependencies": {
     "discord.js": "^12.4.1",
