@@ -1,0 +1,33 @@
+{
+  "name": "djs-template",
+  "version": "0.0.1",
+  "description": "A Disocrd Chatbot (Discord.JS) Template",
+  "main": "run.js",
+  "dependencies": {
+    "discord.js": "^12.4.1",
+    "fs": "^0.0.1-security",
+    "nodemon": "^2.0.14",
+    "path": "^0.12.7"
+  },
+  "scripts": {
+    "mon": "nodemon .",
+    "start": "node ."
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "./*.json",
+      "./Data/*"
+    ]
+  },
+  "keywords": [],
+  "author": "GomQ",
+  "license": "GPL v3.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gom0927/DJSTemplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Gom0927/DJSTemplate/issues"
+  },
+  "homepage": "https://github.com/Gom0927/DJSTemplate"
+}
